@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Constant Private — Family Office, Dubai</title>
+<meta name="description" content="Constant Private is a Dubai-based family office. Distressed and off-market real estate, hospitality assets, and private capital across the UAE and Gulf.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1E2D;
+  --navy-deep:#071522;
+  --navy-line:#1B3346;
+  --gold:#C9A45D;
+  --gold-dim:#8F7845;
+  --ivory:#F2ECDF;
+  --slate:#8FA1AD;
+  --slate-dim:#5E7280;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--navy);
+  color:var(--ivory);
+  font-family:'Manrope',sans-serif;
+  font-weight:300;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--gold);color:var(--navy-deep)}
+
+.rule{position:fixed;top:0;left:50%;width:1px;height:100%;background:linear-gradient(to bottom,transparent,var(--navy-line) 12%,var(--navy-line) 88%,transparent);z-index:0;pointer-events:none}
+@media(max-width:900px){.rule{display:none}}
+
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 32px}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  background:linear-gradient(to bottom,rgba(7,21,34,.92),rgba(7,21,34,.75) 70%,transparent);
+  backdrop-filter:blur(6px);
+}
+.nav{
+  max-width:1080px;margin:0 auto;padding:22px 32px;
+  display:flex;justify-content:space-between;align-items:baseline;
+}
+.mark{
+  font-family:'Fraunces',serif;font-weight:500;font-size:15px;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--ivory);
+  text-decoration:none;
+}
+.mark span{color:var(--gold)}
+nav.links{display:flex;gap:34px}
+nav.links a{
+  font-family:'Manrope',sans-serif;font-size:11px;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--slate);
+  text-decoration:none;transition:color .25s;
+}
+nav.links a:hover,nav.links a:focus-visible{color:var(--gold)}
+nav.links a:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+@media(max-width:720px){nav.links{display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+  padding-top:120px;padding-bottom:80px;
+}
+.motto{
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+  font-size:clamp(18px,2.2vw,23px);color:var(--gold);letter-spacing:.04em;
+  margin-bottom:34px;
+}
+.motto small{
+  display:block;font-family:'Manrope',sans-serif;font-style:normal;
+  font-size:10px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--slate-dim);margin-top:10px;
+}
+h1{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(46px,8.4vw,108px);line-height:1.02;
+  letter-spacing:.01em;color:var(--ivory);
+}
+h1 em{font-style:normal;color:var(--gold)}
+.thesis{
+  margin-top:44px;max-width:520px;
+  font-size:clamp(16px,1.6vw,19px);color:var(--slate);line-height:1.85;
+}
+.hero-foot{
+  margin-top:auto;padding-top:70px;
+  display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:300;
+  letter-spacing:.14em;color:var(--slate-dim);text-transform:uppercase;
+}
+.hero-foot .cities{display:flex;gap:28px}
+
+/* ---------- shared section ---------- */
+section{padding:120px 0;border-top:1px solid var(--navy-line)}
+.eyebrow{
+  display:flex;align-items:center;gap:16px;margin-bottom:56px;
+}
+.eyebrow .lat{
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;
+  color:var(--gold);white-space:nowrap;
+}
+.eyebrow .en{
+  font-family:'Manrope',sans-serif;font-size:10px;font-weight:500;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--slate-dim);white-space:nowrap;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--navy-line)}
+
+/* ---------- office ---------- */
+.office-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+@media(max-width:820px){.office-grid{grid-template-columns:1fr}}
+.office-grid h2{
+  font-family:'Fraunces',serif;font-weight:300;font-size:clamp(28px,3.6vw,40px);
+  line-height:1.25;color:var(--ivory);
+}
+.office-grid h2 em{font-style:italic;font-family:'Cormorant Garamond',serif;color:var(--gold)}
+.office-copy p{color:var(--slate);margin-bottom:22px;max-width:46ch}
+.office-copy p:last-child{margin-bottom:0}
+.office-copy strong{color:var(--ivory);font-weight:500}
+
+/* ---------- ledger ---------- */
+.ledger{border-top:1px solid var(--gold-dim)}
+.entry{
+  display:grid;grid-template-columns:110px 1fr 1.2fr;gap:32px;
+  padding:38px 0;border-bottom:1px solid var(--navy-line);
+  transition:background .3s;
+}
+.entry:hover{background:rgba(201,164,93,.03)}
+@media(max-width:820px){.entry{grid-template-columns:1fr;gap:12px;padding:30px 0}}
+.entry .ref{
+  font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:300;
+  color:var(--gold-dim);letter-spacing:.12em;padding-top:6px;
+}
+.entry h3{
+  font-family:'Fraunces',serif;font-weight:400;font-size:clamp(20px,2.4vw,26px);
+  line-height:1.3;color:var(--ivory);
+}
+.entry p{font-size:15px;color:var(--slate);max-width:52ch}
+.entry .tag{
+  display:inline-block;margin-top:14px;
+  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--slate-dim);
+}
+
+/* ---------- principles ---------- */
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--navy-line);border:1px solid var(--navy-line)}
+@media(max-width:820px){.principles{grid-template-columns:1fr}}
+.principle{background:var(--navy);padding:48px 36px}
+.principle h3{
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+  font-size:24px;color:var(--gold);margin-bottom:16px;
+}
+.principle p{font-size:14.5px;color:var(--slate)}
+
+/* ---------- presence ---------- */
+.presence{display:flex;flex-wrap:wrap;gap:64px}
+.city h3{
+  font-family:'Fraunces',serif;font-weight:400;font-size:22px;color:var(--ivory);
+  margin-bottom:6px;
+}
+.city span{
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--slate-dim);
+}
+
+/* ---------- contact ---------- */
+.contact{text-align:left}
+.contact h2{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(30px,4.4vw,52px);line-height:1.2;color:var(--ivory);
+  max-width:640px;margin-bottom:36px;
+}
+.contact h2 em{font-style:italic;font-family:'Cormorant Garamond',serif;color:var(--gold)}
+.contact p{color:var(--slate);max-width:52ch;margin-bottom:44px}
+.contact a.cta{
+  display:inline-block;
+  font-family:'Manrope',sans-serif;font-size:12px;font-weight:600;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--gold);
+  text-decoration:none;border:1px solid var(--gold-dim);
+  padding:18px 42px;transition:background .3s,color .3s;
+}
+.contact a.cta:hover,.contact a.cta:focus-visible{background:var(--gold);color:var(--navy-deep)}
+.contact a.cta:focus-visible{outline:2px solid var(--ivory);outline-offset:3px}
+
+/* ---------- footer ---------- */
+footer{
+  border-top:1px solid var(--navy-line);padding:44px 0 56px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;
+  font-size:11.5px;color:var(--slate-dim);
+}
+footer .f-mark{
+  font-family:'Fraunces',serif;letter-spacing:.28em;text-transform:uppercase;
+  font-size:12px;color:var(--slate);
+}
+footer .f-mark span{color:var(--gold-dim)}
+
+/* ---------- motion ---------- */
+.fade{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.fade.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .fade{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="rule" aria-hidden="true"></div>
+
+<header>
+  <div class="nav">
+    <a class="mark" href="#top">Constant <span>Private</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#office">The Office</a>
+      <a href="#mandates">Mandates</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none">
+    <div class="motto fade">
+      Non nobis solum
+      <small>Not for ourselves alone</small>
+    </div>
+    <h1 class="fade">Capital, held<br>to a <em>constant</em>.</h1>
+    <p class="thesis fade">A private family office in Dubai. We acquire what the market must sell — distressed and off-market real estate, hospitality assets — and we hold with patience the market rarely affords.</p>
+    <div class="hero-foot fade">
+      <div class="cities">
+        <span>Dubai</span>
+        <span>Istanbul</span>
+        <span>Gulf</span>
+      </div>
+      <span>Est. MMXXIV</span>
+    </div>
+  </section>
+
+  <!-- OFFICE -->
+  <section id="office">
+    <div class="eyebrow fade"><span class="lat">De officio</span><span class="en">The Office</span></div>
+    <div class="office-grid">
+      <h2 class="fade">Most capital chases what is offered.<br><em>Ours waits for what is forced.</em></h2>
+      <div class="office-copy fade">
+        <p>Constant Private is a multi-asset family office operating from Dubai across the UAE and the Gulf. The mandate is narrow by design: situations where the seller's timeline is shorter than the asset's value — estates in transition, lenders exiting, operators who built well and must leave early.</p>
+        <p>We work by <strong>introduction, not solicitation</strong>. Counterparties deal with principals, not committees. Diligence is done quietly, terms are kept simple, and closings happen on the dates agreed.</p>
+        <p>Alongside proprietary acquisitions, the office structures capital for a small circle of UHNW families and single-family offices seeking exposure to the same situations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANDATES / LEDGER -->
+  <section id="mandates">
+    <div class="eyebrow fade"><span class="lat">Acta</span><span class="en">Mandates</span></div>
+    <div class="ledger fade">
+      <div class="entry">
+        <div class="ref">CP–01</div>
+        <h3>Distressed &amp; Off-Market Real Estate</h3>
+        <div>
+          <p>Direct acquisition of residential and commercial assets ahead of listing — bank exits, estate sales, partner separations. Sourced through a private broker network built over a hundred-plus closed transactions.</p>
+          <span class="tag">Dubai · UAE · Acquisition &amp; Disposal</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="ref">CP–02</div>
+        <h3>Hospitality Assets</h3>
+        <div>
+          <p>Hotel plots, operating hotels, and repositioning opportunities across the Gulf. Underwritten on land and keys, not projections — with operating partners engaged only after the basis is right.</p>
+          <span class="tag">UAE · Gulf · Acquisition &amp; Mandate</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="ref">CP–03</div>
+        <h3>Private Capital &amp; Co-Investment</h3>
+        <div>
+          <p>Structured participation for UHNW families and family offices in the situations we originate. Aligned economics: the office invests first, on the same terms.</p>
+          <span class="tag">By Introduction · UHNW · Family Offices</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="ref">CP–04</div>
+        <h3>Structured Auto Financing</h3>
+        <div>
+          <p>High-value vehicle financing structured privately for a select clientele — collateralised, documented, and closed with the same discipline as the real estate book.</p>
+          <span class="tag">Dubai · Private Clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section id="principles">
+    <div class="eyebrow fade"><span class="lat">Mores</span><span class="en">Principles</span></div>
+    <div class="principles fade">
+      <div class="principle">
+        <h3>Discretion</h3>
+        <p>Names, terms, and situations stay inside the room. Reputation in this market is the only asset that cannot be repurchased.</p>
+      </div>
+      <div class="principle">
+        <h3>Basis</h3>
+        <p>Price is the protection. We do not underwrite optimism; we underwrite the entry, and let time do the rest.</p>
+      </div>
+      <div class="principle">
+        <h3>Constancy</h3>
+        <p>Cycles turn, sellers change, the standard does not. The same terms honoured in the same way, transaction after transaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="eyebrow fade"><span class="lat">Colloquium</span><span class="en">Contact</span></div>
+    <h2 class="fade">Serious situations deserve a <em>direct conversation.</em></h2>
+    <p class="fade">If you hold an asset that must move, or capital that should — write to the office. Inquiries are read by a principal and answered within two business days.</p>
+    <a class="cta fade" href="mailto:office@constantprivate.com">Write to the Office</a>
+  </section>
+
+  <footer>
+    <div class="f-mark">Constant <span>Private</span></div>
+    <div>Dubai · Istanbul &nbsp;—&nbsp; © MMXXVI Constant Capital Partners</div>
+  </footer>
+
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+},{threshold:.12});
+document.querySelectorAll('.fade').forEach((el,i)=>{
+  el.style.transitionDelay=(i%4)*90+'ms';
+  io.observe(el);
+});
+</script>
+
+</body>
+</html>
